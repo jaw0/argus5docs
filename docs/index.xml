@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Download</title>
+      <link>http://example.org/docs/download/</link>
+      <pubDate>Sun, 22 Oct 2017 16:12:54 -0400</pubDate>
+      
+      <guid>http://example.org/docs/download/</guid>
+      <description>Argus can be downloaded from:
+ http://argus.tcp4me.com/download.html https://github.com/jaw0/argus5  </description>
+    </item>
+    
+    <item>
       <title>Install</title>
       <link>http://example.org/docs/install/</link>
       <pubDate>Sun, 22 Oct 2017 16:12:54 -0400</pubDate>

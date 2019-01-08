@@ -1,5 +1,12 @@
 [
 {
+	"uri": "http://example.org/docs/download/",
+	"title": "Download",
+	"tags": [],
+	"description": "",
+	"content": "Argus can be downloaded from:\n http://argus.tcp4me.com/download.html https://github.com/jaw0/argus5  "
+},
+{
 	"uri": "http://example.org/docs/install/",
 	"title": "Install",
 	"tags": [],
@@ -154,6 +161,13 @@
 	"content": "You can adjust the look of the web pages in numerous ways. The most commonly used parameters are:\nYou can add text or html to the top and bottom of web pages. Typically, these are set once at the top of the monitoring config to customize the look of pages site-wide.\n header - text or html to be placed at the top of web pages footer - text or html to be placed at the bottom of web pages header_branding - text or html to be placed at the top of web pages, typically a company name or logo login_notice - text or html placed on the login page, such as a link to a privacy policy   header_branding: YoyoDyne Inc - internal use only login_notice: We use \u0026lt;a href=policy\u0026gt;cookies\u0026lt;a\u0026gt;  There are several fields that can be used for general informational purposes. They can be text or html (such as a link to additional information). Typically, these are configured on groups or services to provide information about what is being monitored.\n note - informational info - informational comment - informational details - informational   Host \"server.example.com\" { note: This server is a Sun T1000 Service Ping  You can change the name that gets displayed for each object by setting:\n label - name to display on web page  "
 },
 {
+	"uri": "http://example.org/docs/",
+	"title": "Docs",
+	"tags": [],
+	"description": "",
+	"content": "Documentation for Argus5\n"
+},
+{
 	"uri": "http://example.org/",
 	"title": "",
 	"tags": [],
@@ -163,13 +177,6 @@
 {
 	"uri": "http://example.org/categories/",
 	"title": "Categories",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "http://example.org/docs/",
-	"title": "Docs",
 	"tags": [],
 	"description": "",
 	"content": ""
