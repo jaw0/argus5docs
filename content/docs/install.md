@@ -1,7 +1,7 @@
 ---
 title: "Install"
 date: 2017-10-22T16:12:54-04:00
-weight: 1
+weight: 2
 ---
 
 ### Verify that you have the prerequisites installed
