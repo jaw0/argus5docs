@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.30.2" />
+    <meta name="description" content="Argus - system &#43; network monitoring software">
+
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>Access Control :: Argus Monitoring</title>
+    
+    
+    <link href="/css/nucleus.css?1546965031" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1546965031" rel="stylesheet">
+    <link href="/css/hybrid.css?1546965031" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1546965031" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1546965031" rel="stylesheet">
+    <link href="/css/auto-complete.css?1546965031" rel="stylesheet">
+    <link href="/css/theme.css?1546965031" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1546965031" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1546965031"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/docs/acl/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <span style="color:#fff;font-size:75px;">Argus</span>
+
+    </div>
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/docs/" title="Docs" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/docs/">
+          Docs
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/install/" title="Install" class="dd-item ">
+        <a href="/docs/install/">
+        Install
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/config/" title="Configuring" class="dd-item ">
+        <a href="/docs/config/">
+        Configuring
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/argusconf/" title="Argus Conf" class="dd-item ">
+        <a href="/docs/argusconf/">
+        Argus Conf
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/configfile/" title="Config File" class="dd-item ">
+        <a href="/docs/configfile/">
+        Config File
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/running/" title="Running Argus" class="dd-item ">
+        <a href="/docs/running/">
+        Running Argus
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/users/" title="Users" class="dd-item ">
+        <a href="/docs/users/">
+        Users
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/services/" title="Services" class="dd-item ">
+        <a href="/docs/services/">
+        Services
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/hwab/" title="Aberrant Behavior Detection" class="dd-item ">
+        <a href="/docs/hwab/">
+        Aberrant Behavior Detection
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/acl/" title="Access Control" class="dd-item active">
+        <a href="/docs/acl/">
+        Access Control
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/advanced/" title="Advanced Features" class="dd-item ">
+        <a href="/docs/advanced/">
+        Advanced Features
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/testport/" title="Argus Test Port" class="dd-item ">
+        <a href="/docs/testport/">
+        Argus Test Port
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/database/" title="Database Testing" class="dd-item ">
+        <a href="/docs/database/">
+        Database Testing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/darp/" title="Distributed Monitoring" class="dd-item ">
+        <a href="/docs/darp/">
+        Distributed Monitoring
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/xtservices/" title="Extended Testing" class="dd-item ">
+        <a href="/docs/xtservices/">
+        Extended Testing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/notif/" title="Notifications" class="dd-item ">
+        <a href="/docs/notif/">
+        Notifications
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/override/" title="Overrides" class="dd-item ">
+        <a href="/docs/override/">
+        Overrides
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/agent/" title="Remote Agent" class="dd-item ">
+        <a href="/docs/agent/">
+        Remote Agent
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/self/" title="Testing Argus" class="dd-item ">
+        <a href="/docs/self/">
+        Testing Argus
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/dns/" title="Testing DNS" class="dd-item ">
+        <a href="/docs/dns/">
+        Testing DNS
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/tktsys/" title="Ticket System" class="dd-item ">
+        <a href="/docs/tktsys/">
+        Ticket System
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/troubleshooting/" title="Troubleshooting" class="dd-item ">
+        <a href="/docs/troubleshooting/">
+        Troubleshooting
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/webpretty/" title="Web Pages" class="dd-item ">
+        <a href="/docs/webpretty/">
+        Web Pages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li class="" role=""> 
+                  <a class="padding" href="https://github.com/jaw0/argus5"><i class='fa fa-github'></i> Github repo</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <p>In God we trust, everything else we monitor.</p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable sticky-parent">
+              
+              <div class="sticky-spacer">
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" href="https://github.com/jaw0/argus5docs/docs/acl.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      Edit this page
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/docs/'>Docs</a> > Access Control
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#specifying-access-control-lists">Specifying Access Control Lists</a></li>
+<li><a href="#simple-mode-defaults">Simple Mode Defaults</a></li>
+<li><a href="#extended-mode">Extended Mode</a></li>
+<li><a href="#cumulative-inheritance">Cumulative Inheritance</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Access Control</h1>
+          
+
+        
+
+
+
+
+<p>In the users section we saw how to make a user a member of a set of groups. In order to control access to things, we specify which groups have access to a particular thing. If the user is a member of any of the specified groups, access is permitted.</p>
+
+<p>say we have a users file entry:</p>
+
+<pre>Name:     bob
+EPasswd:  $2a$10$sck5WIOLGsthgyX
+Home:     Top
+Groups:   gibber jabber
+</pre>
+
+<p>bob now belongs to both the &lsquo;gibber&rsquo; and &lsquo;jabber&rsquo; groups.</p>
+
+<pre>        Group "Foo" {
+                acl_foobar:     jabber gizzle
+                ...
+        }
+</pre>
+
+<p>this gives all members of the groups &lsquo;jibber&rsquo; and &lsquo;gizzle&rsquo; foobar permission. Thus, the user bob, being a member of &lsquo;jabber&rsquo;, has foobar access.</p>
+
+<div class="TECHNOTE">In most installations, the default access control lists are sufficient, and you will not need to specify anything further.</div>
+
+<h2 id="specifying-access-control-lists">Specifying Access Control Lists</h2>
+
+<p>You can specify access control parameters on an object in either of 2 modes: simple or extended.</p>
+
+<p>In simple mode, there are 3 access control lists which control all permissions:</p>
+
+<ol>
+<li>acl_user</li>
+<li>acl_staff</li>
+<li>acl_root</li>
+</ol>
+
+<p>acl_user controls basic read access to an objects webpage. acl_staff controls some read-write access, such as setting or removing overrides, and acknowledging notifications. acl_root controls everything else, such as accessing debug info, and the configuration data.</p>
+
+<p>Note, these are separate acls, controlling access to different things. Argus will happily permit a user access to debugging info (acl_root) and deny them access to view the webpage (acl_user). If you want to permit a user access to everything, they will need to be in all 3 of the acls.</p>
+
+<h2 id="simple-mode-defaults">Simple Mode Defaults</h2>
+
+<p>By default, if no acls are specified in the config file, argus uses 3 groups named &lsquo;user&rsquo;, &lsquo;staff&rsquo;, and &lsquo;root&rsquo; and creates acls:</p>
+
+<pre>        acl_root:       root
+        acl_staff:      staff root
+        acl_user:       user staff root
+</pre>
+
+<p>allowing you to assign one of these 3 groups to users in the users file</p>
+
+<h2 id="extended-mode">Extended Mode</h2>
+
+<p>In extended mode, each separate function has its own acl.</p>
+
+<pre>        Group "Foo" {
+                acl_mode:       extended
+                acl_override:   staff
+                acl_getconf:    sr_staff
+                ...
+        }
+</pre>
+
+<p>The acls are:</p>
+
+<ul>
+<li>acl_page</li>
+<li>acl_getconf</li>
+<li>acl_about</li>
+<li>acl_flush</li>
+<li>acl_override</li>
+<li>acl_annotate</li>
+<li>acl_logfile</li>
+<li>acl_ntfylist</li>
+<li>acl_ntfyack</li>
+<li>acl_ntfyackall</li>
+<li>acl_ntfydetail</li>
+</ul>
+
+<div class="TECHNOTE">In versions 3.5 and later, the acl_mode no longer needs to be specified, and simple mode and extended mode parameters may be mixed and matched.</div>
+
+<h2 id="cumulative-inheritance">Cumulative Inheritance</h2>
+
+<p>ACLs are cumulative from the top level down.</p>
+
+<pre>        Group "Foo" {
+                acl_override:   foo
+
+                Group "Bar" {
+                        acl_override:   bar
+                        ...
+                }
+        }
+</pre>
+
+<p>Members of both groups &lsquo;foo&rsquo; and &lsquo;bar&rsquo; will have override access on &lsquo;Bar&rsquo;.</p>
+
+<p>The syntax &lsquo;-group&rsquo; can be used to remove groups. The special &lsquo;-ALL&rsquo; will remove all groups:</p>
+
+<pre>        Group "Foo" {
+                acl_override:   foo bar
+                Group "Bar" {
+                        acl_override:   -foo baz
+                        ...
+                }
+                Group "Baz" {
+                        acl_override:   -ALL baz
+                        ...
+                }
+        }
+</pre>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/docs/hwab/" title="Aberrant Behavior Detection"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/docs/advanced/" title="Advanced Features" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1546965031"></script>
+    <script src="/js/perfect-scrollbar.min.js?1546965031"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1546965031"></script>
+    <script src="/js/jquery.sticky-kit.min.js?1546965031"></script>
+    <script src="/js/featherlight.min.js?1546965031"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1546965031"></script>
+    <script src="/js/highlight.pack.js?1546965031"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1546965031"></script>
+    <script src="/js/learn.js?1546965031"></script>
+    <script src="/js/hugo-learn.js?1546965031"></script>
+
+    <link href="/mermaid/mermaid.css?1546965031" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1546965031"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

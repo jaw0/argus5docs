@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.30.2" />
+    <meta name="description" content="Argus - system &#43; network monitoring software">
+
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>Config File :: Argus Monitoring</title>
+    
+    
+    <link href="/css/nucleus.css?1546965031" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1546965031" rel="stylesheet">
+    <link href="/css/hybrid.css?1546965031" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1546965031" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1546965031" rel="stylesheet">
+    <link href="/css/auto-complete.css?1546965031" rel="stylesheet">
+    <link href="/css/theme.css?1546965031" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1546965031" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1546965031"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/docs/configfile/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <span style="color:#fff;font-size:75px;">Argus</span>
+
+    </div>
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/docs/" title="Docs" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/docs/">
+          Docs
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/install/" title="Install" class="dd-item ">
+        <a href="/docs/install/">
+        Install
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/config/" title="Configuring" class="dd-item ">
+        <a href="/docs/config/">
+        Configuring
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/argusconf/" title="Argus Conf" class="dd-item ">
+        <a href="/docs/argusconf/">
+        Argus Conf
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/configfile/" title="Config File" class="dd-item active">
+        <a href="/docs/configfile/">
+        Config File
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/running/" title="Running Argus" class="dd-item ">
+        <a href="/docs/running/">
+        Running Argus
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/users/" title="Users" class="dd-item ">
+        <a href="/docs/users/">
+        Users
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/services/" title="Services" class="dd-item ">
+        <a href="/docs/services/">
+        Services
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/hwab/" title="Aberrant Behavior Detection" class="dd-item ">
+        <a href="/docs/hwab/">
+        Aberrant Behavior Detection
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/acl/" title="Access Control" class="dd-item ">
+        <a href="/docs/acl/">
+        Access Control
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/advanced/" title="Advanced Features" class="dd-item ">
+        <a href="/docs/advanced/">
+        Advanced Features
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/testport/" title="Argus Test Port" class="dd-item ">
+        <a href="/docs/testport/">
+        Argus Test Port
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/database/" title="Database Testing" class="dd-item ">
+        <a href="/docs/database/">
+        Database Testing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/darp/" title="Distributed Monitoring" class="dd-item ">
+        <a href="/docs/darp/">
+        Distributed Monitoring
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/xtservices/" title="Extended Testing" class="dd-item ">
+        <a href="/docs/xtservices/">
+        Extended Testing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/notif/" title="Notifications" class="dd-item ">
+        <a href="/docs/notif/">
+        Notifications
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/override/" title="Overrides" class="dd-item ">
+        <a href="/docs/override/">
+        Overrides
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/agent/" title="Remote Agent" class="dd-item ">
+        <a href="/docs/agent/">
+        Remote Agent
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/self/" title="Testing Argus" class="dd-item ">
+        <a href="/docs/self/">
+        Testing Argus
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/dns/" title="Testing DNS" class="dd-item ">
+        <a href="/docs/dns/">
+        Testing DNS
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/tktsys/" title="Ticket System" class="dd-item ">
+        <a href="/docs/tktsys/">
+        Ticket System
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/troubleshooting/" title="Troubleshooting" class="dd-item ">
+        <a href="/docs/troubleshooting/">
+        Troubleshooting
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/webpretty/" title="Web Pages" class="dd-item ">
+        <a href="/docs/webpretty/">
+        Web Pages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li class="" role=""> 
+                  <a class="padding" href="https://github.com/jaw0/argus5"><i class='fa fa-github'></i> Github repo</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <p>In God we trust, everything else we monitor.</p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable sticky-parent">
+              
+              <div class="sticky-spacer">
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" href="https://github.com/jaw0/argus5docs/docs/configfile.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      Edit this page
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/docs/'>Docs</a> > Config File
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#config-file-structure">Config File Structure</a></li>
+<li><a href="#config-file-other-notes">Config File - Other Notes</a>
+<ul>
+<li><a href="#case-sensitivity">Case Sensitivity</a></li>
+<li><a href="#include-files">Include Files</a></li>
+<li><a href="#time-units">Time Units</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Config File</h1>
+          
+
+        
+
+
+
+
+<p>You have the choice of creating a single config file, or a directory of separate config files, which are effectively concatenated together.</p>
+
+<p>The latter is useful so that different parts can be generated by different people or different scripts.</p>
+
+<p>For example, the author has one file for each of: unix servers, NT servers, routers, terminal servers, BGP sessions, T1 connections, DSL connections, etc.
+Certain files are built by scripts from various databases, and others are maintained by people.</p>
+
+<p>The application can be configured to automatically notice if a config file changes and will reload.</p>
+
+<p>By default, argus will look in the configured data directory for a file or subdirectory named config. This can be overridden with the -c command line option.</p>
+
+<h2 id="config-file-structure">Config File Structure</h2>
+
+<p>The config file defines what and how things are monitored as well as the layout and relationships of the various items.</p>
+
+<p>It contains various types of things</p>
+
+<ul>
+<li>key-value pairs, aka. data
+frequency: 300</li>
+<li>specifications of things to monitor, aka. Services
+Service TCP/SMTP</li>
+<li>groups of services, aka. Groups
+Group &ldquo;Foo&rdquo; {
+    hostname: foo.example.com
+    Service TCP/SMTP
+    Service TCP/HTTP
+}</li>
+<li>alternate names for things, aka. Aliases
+Alias &ldquo;Foo&rdquo; &ldquo;Top:Servers:Foo&rdquo;
+Aliases are described further in the advanced documentation</li>
+<li>definitions of notification methods
+notification methods are described in notification documentation</li>
+<li>definitions of special features, such as DARP</li>
+</ul>
+
+<p>In the config file, the parameter-value data must come first, followed by notification methods and special features, followed by groups and services.</p>
+
+<p>There are an extremely large number of parameters (data) that can be (or need to be) defined. In general, everything tries to default to reasonable and &ldquo;Do What I Mean&rdquo; values.</p>
+
+<p>Probably good to show an example:</p>
+
+<pre><code> syslog: local1
+ notify: mail:staff@example.com
+
+ Group &quot;Servers&quot; {
+         Group &quot;mail&quot; {
+                 # Here, we specify data (hostname) for the group
+                 # Note: hostname data is not used by Groups
+                 # but the enclosed Services will inherit
+                 # the value and use it
+                 hostname: mail.example.com
+                 Service TCP/SMTP
+                 Service TCP/IMAP
+                 Service UDP/DNS
+                 Service Ping
+                 # Notice, Services can either be standalone, or have
+                 # data attached
+                 # in the next case, we give the Ping a different
+                 # address to check
+                 Service Ping {
+                         hostname: 10.4.3.2
+                 }
+         }
+         Group &quot;www&quot; {
+                 # Note, unlike C or Perl, you cannot
+                 # place the opening { on a different line
+                 hostname: www.example.com
+                 Service TCP/HTTP
+                 Service TCP/HTTPS
+                 Service Ping
+                 Service TCP {
+                         port: 12345
+                         info: YoyoDyne Application Server
+                 }
+                 # Also, the closing } must be on
+                 # a line by itself (with optional whitespace)
+         }
+ }
+</code></pre>
+
+<p>Since it is quite common to create a group representing a single host, and enclosing a number of services to test on that host, a shorthand notation is provided for this:</p>
+
+<pre><code>Host &quot;www.example.com&quot; {
+    Service TCP/HTTP
+    Service TCP/HTTPS
+    Service Ping
+    Service TCP {
+        port: 12345
+        info: YoyoDyne Application Server
+    }
+}
+</code></pre>
+
+<p>This does the same thing as the &ldquo;www&rdquo; group in the other example.</p>
+
+<p>Hmmm, OK, perhaps it isn&rsquo;t much shorter. How about &ldquo;A more self-documenting-hand&rdquo;, instead?</p>
+
+<p>Other sections of the documentation will explain some of the more common parameters and show additional examples.</p>
+
+<h2 id="config-file-other-notes">Config File - Other Notes</h2>
+
+<h3 id="case-sensitivity">Case Sensitivity</h3>
+
+<p>In general, the everything is case-sensitive. Often, argus can figure out what you mean if you mis-case something, but not always, so you should you use the same casing as shown.</p>
+
+<h3 id="include-files">Include Files</h3>
+
+<p>You can include another file in a config file by saying:</p>
+
+<pre><code>Include &quot;file&quot;
+</code></pre>
+
+<p>Include files may in turn include other files to any level of nesting (well, up to what ever resource limits your Operating System may have)</p>
+
+<h3 id="time-units">Time Units</h3>
+
+<p>Many parameters specify amounts of time. Times can be specified using units of secs, mins, hours, days, weeks, and years, all may be abbreviated to one letter. For example: 36y, or 12m.</p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/docs/argusconf/" title="Argus Conf"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/docs/running/" title="Running Argus" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1546965031"></script>
+    <script src="/js/perfect-scrollbar.min.js?1546965031"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1546965031"></script>
+    <script src="/js/jquery.sticky-kit.min.js?1546965031"></script>
+    <script src="/js/featherlight.min.js?1546965031"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1546965031"></script>
+    <script src="/js/highlight.pack.js?1546965031"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1546965031"></script>
+    <script src="/js/learn.js?1546965031"></script>
+    <script src="/js/hugo-learn.js?1546965031"></script>
+
+    <link href="/mermaid/mermaid.css?1546965031" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1546965031"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

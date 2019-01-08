@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.30.2" />
+    <meta name="description" content="Argus - system &#43; network monitoring software">
+
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>Services :: Argus Monitoring</title>
+    
+    
+    <link href="/css/nucleus.css?1546965031" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1546965031" rel="stylesheet">
+    <link href="/css/hybrid.css?1546965031" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1546965031" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1546965031" rel="stylesheet">
+    <link href="/css/auto-complete.css?1546965031" rel="stylesheet">
+    <link href="/css/theme.css?1546965031" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1546965031" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1546965031"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/docs/services/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <span style="color:#fff;font-size:75px;">Argus</span>
+
+    </div>
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/docs/" title="Docs" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/docs/">
+          Docs
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/install/" title="Install" class="dd-item ">
+        <a href="/docs/install/">
+        Install
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/config/" title="Configuring" class="dd-item ">
+        <a href="/docs/config/">
+        Configuring
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/argusconf/" title="Argus Conf" class="dd-item ">
+        <a href="/docs/argusconf/">
+        Argus Conf
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/configfile/" title="Config File" class="dd-item ">
+        <a href="/docs/configfile/">
+        Config File
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/running/" title="Running Argus" class="dd-item ">
+        <a href="/docs/running/">
+        Running Argus
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/users/" title="Users" class="dd-item ">
+        <a href="/docs/users/">
+        Users
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/services/" title="Services" class="dd-item active">
+        <a href="/docs/services/">
+        Services
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/hwab/" title="Aberrant Behavior Detection" class="dd-item ">
+        <a href="/docs/hwab/">
+        Aberrant Behavior Detection
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/acl/" title="Access Control" class="dd-item ">
+        <a href="/docs/acl/">
+        Access Control
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/advanced/" title="Advanced Features" class="dd-item ">
+        <a href="/docs/advanced/">
+        Advanced Features
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/testport/" title="Argus Test Port" class="dd-item ">
+        <a href="/docs/testport/">
+        Argus Test Port
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/database/" title="Database Testing" class="dd-item ">
+        <a href="/docs/database/">
+        Database Testing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/darp/" title="Distributed Monitoring" class="dd-item ">
+        <a href="/docs/darp/">
+        Distributed Monitoring
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/xtservices/" title="Extended Testing" class="dd-item ">
+        <a href="/docs/xtservices/">
+        Extended Testing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/notif/" title="Notifications" class="dd-item ">
+        <a href="/docs/notif/">
+        Notifications
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/override/" title="Overrides" class="dd-item ">
+        <a href="/docs/override/">
+        Overrides
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/agent/" title="Remote Agent" class="dd-item ">
+        <a href="/docs/agent/">
+        Remote Agent
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/self/" title="Testing Argus" class="dd-item ">
+        <a href="/docs/self/">
+        Testing Argus
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/dns/" title="Testing DNS" class="dd-item ">
+        <a href="/docs/dns/">
+        Testing DNS
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/tktsys/" title="Ticket System" class="dd-item ">
+        <a href="/docs/tktsys/">
+        Ticket System
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/troubleshooting/" title="Troubleshooting" class="dd-item ">
+        <a href="/docs/troubleshooting/">
+        Troubleshooting
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/webpretty/" title="Web Pages" class="dd-item ">
+        <a href="/docs/webpretty/">
+        Web Pages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li class="" role=""> 
+                  <a class="padding" href="https://github.com/jaw0/argus5"><i class='fa fa-github'></i> Github repo</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <p>In God we trust, everything else we monitor.</p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable sticky-parent">
+              
+              <div class="sticky-spacer">
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" href="https://github.com/jaw0/argus5docs/docs/services.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      Edit this page
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/docs/'>Docs</a> > Services
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#common-data-that-applies-to-all-services">Common Data that applies to all Services</a></li>
+<li><a href="#data-for-prog-tests">Data for Prog Tests</a></li>
+<li><a href="#data-for-ping-tests">Data for Ping Tests</a></li>
+<li><a href="#data-for-tcp-and-udp-tests">Data for TCP and UDP Tests</a></li>
+<li><a href="#a-name-udp-snmp-snmp-tests-a"><a name="UDP/SNMP">SNMP Tests</a></a></li>
+<li><a href="#a-name-udp-snmpv3-snmpv3-tests-a-5-foot-5"><a name="UDP/SNMPv3">SNMPv3 Tests</a><a href="#foot_5">[5]</a></a>
+<ul>
+<li><a href="#snmp-rate-calculations">SNMP rate calculations</a></li>
+</ul></li>
+<li><a href="#a-name-tcp-url-tcp-url-content-test-a"><a name="TCP/URL">TCP/URL Content Test</a></a></li>
+<li><a href="#a-name-udp-domain-dns-authoritativeness-test-a"><a name="UDP/Domain">DNS Authoritativeness Test</a></a></li>
+<li><a href="#rpc-tests">RPC tests</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Services</h1>
+          
+
+        
+
+
+
+
+<p>Services specify actual things to monitor. The very purpose of this software. So, you&rsquo;ll probably need to know about them</p>
+
+<p>In the config file, Services are specified as:</p>
+
+<pre>        Service NAME {
+                _data..._
+        }
+</pre>
+
+<p>Often, there will be no need to specify any data, and you may shorten the specification to just</p>
+
+<pre>        Service NAME
+</pre>
+
+<div class="TECHNOTE">If you are just starting out with argus, it is recommended that you stick to the short form when possible and let argus fill in the default values. In most cases, you will only say:  
+<tt>    Service Ping</tt>  
+<tt>    Service TCP/SMTP</tt>  
+<tt>    Service TCP/IMAP</tt>  
+in your config file, and argus will default the rest.</div>
+
+<p>NAME specifies the type of test. There are 4 main types of tests:</p>
+
+<ul>
+<li>Ping - Pings a host</li>
+<li>Prog - runs a program</li>
+<li>TCP - tests a TCP port</li>
+<li>UDP - tests a UDP port</li>
+</ul>
+
+<p>Both TCP and UDP have a number of application tests built-in. Specifying an application does the same thing as setting the various bits of data to values appropriate for the protocol. But you could just as easily specify them directly.</p>
+
+<p>The currently built-in application tests are:</p>
+
+<ul>
+<li>TCP/SMTP TCP/FTP TCP/NNTP TCP/HTTP TCP/HTTPS TCP/Gopher TCP/Telnet TCP/SSH TCP/POP TCP/IMAP TCP/DNS TCP/LPD TCP/Whois TCP/Rwhois TCP/NFS TCP/NFSv3 TCP/POPS TCP/IMAPS TCP/SMTPS TCP/NNTPS TCP/SIP TCP/Slimserver</li>
+<li>UDP/SNMP UDP/SNMPv2c UDP/SNMPv3 UDP/DNS UDP/DNSQ<a href="#foot_1">[1]</a> UDP/NTP UDP/Portmap UDP/NFS UDP/NFSv3<a href="#foot_2">[2]</a> UDP/RADIUS<a href="#foot_3">[3]</a> UDP/SIP UDP/IAX2</li>
+<li>several &ldquo;special&rdquo; tests: TCP/URL UDP/Domain TCP/RPC UDP/RPC</li>
+</ul>
+
+<h2 id="common-data-that-applies-to-all-services">Common Data that applies to all Services</h2>
+
+<pre>        Service NAME {
+                frequency:      60
+                retries:        5
+                timeout:        10
+        }
+</pre>
+
+<p>These do not need to be specified, they will happily default, or propagate from an enclosing group</p>
+
+<ul>
+<li><p><tt>frequency</tt> specifies how often the service is tested, in seconds.<br />
+The author is aware that technically, this should be called <tt>period</tt> &ndash; deal with it.</p></li>
+
+<li><p><tt>retries</tt> if a test fails, we will retry it the specified number of times before declaring it down</p></li>
+
+<li><p><tt>timeout</tt> how long to wait for something (eg. a response from a mail server) before giving up and declaring the test a failure.</p></li>
+</ul>
+
+<div class="TECHNOTE">Note, specifying that things happen every 60 seconds (for example) does not mean that they will happen at the top of every minute (:00 seconds). Argus is smart and will load balance the tests to prevent the 59 seconds of quiet followed by an intense flurry of network congestion common in some other network monitoring applications. In argus-speak, things have a frequency and a phase, called <tt>phi</tt>. You cannot set this, but it is visible in the debugging web page.</div>
+
+<h2 id="data-for-prog-tests">Data for Prog Tests</h2>
+
+<pre>        Service Prog {
+                # make sure no one deleted root from the passwd file
+                command:        cat /etc/passwd
+                expect:         ^root:
+        }
+</pre>
+
+<p>These need to be specified. They will not default, or propagate from anywhere</p>
+
+<ul>
+<li><p><tt>command</tt> the command to run, along with any commandline arguments. specify it just as you would to your shell. you should either specify a complete path to the program, or verify that it is in argus&rsquo;s PATH</p></li>
+
+<li><p><tt>expect</tt> a regular expression that needs to match the output from the command. if not specified, the exit code from the program will be used to determine success or failure</p></li>
+</ul>
+
+<h2 id="data-for-ping-tests">Data for Ping Tests</h2>
+
+<pre>        Service Ping {
+                hostname:       host1.example.com
+        }
+</pre>
+
+<p>This needs to be specified, but will propagate from an enclosing group</p>
+
+<p><tt>hostname</tt> the hostname or IP address to ping</p>
+
+<h2 id="data-for-tcp-and-udp-tests">Data for TCP and UDP Tests</h2>
+
+<pre>        Service TCP {
+                hostname:       www.example.com
+                port:           80
+                send:           HEAD / HTTP/1.0\r\n\r\n
+                expect:         HTTP
+                readhow:        toeof
+        }
+</pre>
+
+<p>Both TCP and UDP have many of the same parameters</p>
+
+<ul>
+<li><p><tt>hostname</tt> the hostname or IP address to test. This needs to be specified, but will propagate from an enclosing group</p></li>
+
+<li><p><tt>port</tt> the port to test. This needs to be specified.</p></li>
+
+<li><p><tt>send</tt> data to send once connected. This needs to be specified. If nothing is specified, nothing will be sent to the remote server</p></li>
+
+<li><p><tt>expect</tt> a regular expression that needs to match the data received from the remote server. This needs to be specified. If nothing is specified, success or failure is determined by whether or not we received any data at all</p></li>
+
+<li><p><tt>readhow</tt> This needs to be specified. How much data should we try to read? <tt>toeof</tt> indicates read until the remote end closes the connection. <tt>banner</tt> indicates we only want to read a banner. <tt>once</tt> indicates to use whatever data is returned in the first read(). This parameter only applies to TCP not UDP</p></li>
+</ul>
+
+<p>Specifying an application (eg. TCP/SMTP) will fill in port, send, expect, and readhow as appropriate for that protocol</p>
+
+<p>See below for details on the special <a href="#TCP/URL">TCP/URL</a>, <a href="#UDP/Domain">UDP/Domain</a>, and <a href="#UDP/SNMP">UDP/SNMP</a> tests</p>
+
+<h2 id="a-name-udp-snmp-snmp-tests-a"><a name="UDP/SNMP">SNMP Tests</a></h2>
+
+<pre>        Service UDP/SNMP {
+                hostname:       cisco-1.example.com
+                community:      qwerty
+                oid:            .1.3.6.1.4.1.9.9.13.1.3.1.3.1
+                maxvalue:       27
+        }
+</pre>
+
+<ul>
+<li><p><tt>hostname</tt> the hostname or IP address to test. This needs to be specified, but will propagate from an enclosing group</p></li>
+
+<li><p><tt>community</tt> the SNMP community. This needs to be specified, but will propagate from an enclosing group</p></li>
+
+<li><p><tt>oid</tt> the OID to query. It should be numeric, and the leading &lsquo;.&rsquo; is optional. This needs to be specified.</p></li>
+
+<li><p><tt>maxvalue</tt> the maximum permitted value, if the query returns something larger, we consider the service down. You can specify any of:</p>
+
+<ul>
+<li>maxvalue</li>
+<li>minvalue</li>
+<li>eqvalue</li>
+<li>nevalue</li>
+</ul></li>
+</ul>
+
+<h2 id="a-name-udp-snmpv3-snmpv3-tests-a-5-foot-5"><a name="UDP/SNMPv3">SNMPv3 Tests</a><a href="#foot_5">[5]</a></h2>
+
+<pre>        Service UDP/SNMPv3 {
+                hostname:       cisco-1.example.com
+                oid:            .1.3.6.1.4.1.9.9.13.1.3.1.3.1
+                snmpuser:       joe
+                snmppass:       secret
+                snmpauth:       MD5
+                snmpprivpass:   supersecret
+                snmppriv:       DES
+                contextname:    public
+                contextengine:  80000000123456
+                authengine:     80000000123456
+        }
+</pre>
+
+<ul>
+<li><p><tt>snmpuser</tt> the snmp username This needs to be specified, but will propagate from an enclosing group</p></li>
+
+<li><p><tt>snmppass</tt> the snmp authentication password This needs to be specified if authentication is required, but will propagate from an enclosing group</p></li>
+
+<li><p><tt>snmpauth</tt> the authentication algorithm, MD5, SHA1, or none. This will default to MD5 if a password is provided, otherwise none.</p></li>
+
+<li><p><tt>snmpprivpass</tt> the privacy password This needs to be specified if privacy is required, but will propagate from an enclosing group</p></li>
+
+<li><p><tt>snmppriv</tt> the privacy encryption algorithm, DES or none. This will default to DES if a snmpprivpass is specified, otherwise none.</p></li>
+
+<li><p><tt>contextname</tt> the context name This needs to be specified, but will propagate from an enclosing group</p></li>
+
+<li><p><tt>contextengine</tt> the context engine-id This needs to be specified, but will propagate from an enclosing group, or will attempt to be auto-discovered.</p></li>
+
+<li><p><tt>authengine</tt> the authentication engine-id This needs to be specified, but will propagate from an enclosing group, or will attempt to be auto-discovered.</p></li>
+</ul>
+
+<h3 id="snmp-rate-calculations">SNMP rate calculations</h3>
+
+<p>Certain SNMP values are not useful themselves, but may be useful to watch after performing some manipulation. InOctets by itself is not useful, but using it to calculate a rate (or bandwidth use) in Bytes (or Bits) per second and comparing that value to a max or min is useful.</p>
+
+<pre>        Service UDP/SNMP {
+                label:          Out
+                hostname:       cisco-1.example.com
+                # OutOctets
+                oid:            .1.3.6.1.2.1.2.2.1.16.2
+                calc:           ave-rate-bits
+                maxvalue:       20000000        # 20M bits/sec
+                minvalue:        1000000        #  1M bits/sec
+        }
+</pre>
+
+<p>This will convert the OutOctets value into a rate (Bytes per second), calculate the moving average, and convert it to Bits per second. If the resulting value falls outside the expected range of 1-20 Mbps, the test will fail.</p>
+
+<div class="TECHNOTE">The <tt>calc</tt> parameter was known as <tt>snmpcalc</tt> prior to version 3.2</div>
+
+<h2 id="a-name-tcp-url-tcp-url-content-test-a"><a name="TCP/URL">TCP/URL Content Test</a></h2>
+
+<p>The TCP/HTTP tests that the HTTP service is up and running. The TCP/URL test will test the content of a web page.</p>
+
+<pre>        Service TCP/URL {
+                url:     http://www.example.com/cgi-bin/shoppingcart.pl
+                browser: Mozilla/5.0 (compatible; just testing)
+                expect:  cart contains 1 item
+        }
+</pre>
+
+<ul>
+<li><p><tt>url</tt> the url to fetch. it must begin with &lsquo;http://&lsquo;, and may contain an optional &lsquo;:port&rsquo;. It needs to be specified.</p></li>
+
+<li><p><tt>expect</tt> a regular expression that needs to match the data received from the remote server. This needs to be specified. If nothing is specified, success or failure is determined by whether or not we received any data at all</p></li>
+
+<li><p><tt>browser</tt> spoof the specified browser (send as the User-Agent). This is optional, and can be used if the server or application is serving different content based on browser.</p></li>
+</ul>
+
+<h2 id="a-name-udp-domain-dns-authoritativeness-test-a"><a name="UDP/Domain">DNS Authoritativeness Test</a></h2>
+
+<p>The UDP/DNS (and UDP/DNSQ) test that a DNS server is up and running. The UDP/Domain test will test that a server is answering authoritatively for a zone.</p>
+
+<pre>        Service UDP/Domain {
+                hostname:       ns1.example.com
+                zone:           example.com
+        }
+</pre>
+
+<ul>
+<li><p><tt>hostname</tt> the hostname or IP address to query. This needs to be specified, but will propagate from an enclosing group</p></li>
+
+<li><p><tt>zone</tt> the DNS zone to check.</p></li>
+</ul>
+
+<p>as a shortcut, an alternative syntax is supported:</p>
+
+<pre>        Group "nameserver" {
+                hostname:       ns1.example.com
+                Service UDP/Domain/example.com
+                Service UDP/Domain/example.net
+                Service UDP/Domain/example.org
+        }
+</pre>
+
+<h2 id="rpc-tests">RPC tests</h2>
+
+<p>Both TCP and UDP RPC services can be tested. The RPC tests will query the RPC portmapper to learn the service&rsquo;s current port.</p>
+
+<pre>        Service UDP/RPC
+                hostname:       ns1.example.com
+                prognum:        100003
+                version:        2
+        }
+</pre>
+
+<ul>
+<li><p><tt>hostname</tt> the hostname or IP address to query. This needs to be specified, but will propagate from an enclosing group</p></li>
+
+<li><p><tt>prognum</tt> the RPC program number. this must be specified. many common RPC services can also be specified by name.</p></li>
+
+<li><p><tt>version</tt> the RPC program version. will default to 0.</p></li>
+</ul>
+
+<p>as a shortcut, an alternative syntax is supported:</p>
+
+<pre>
+        Group "server" {
+                hostname:       server.example.com
+
+                # Service UDP/RPC/program/version
+
+                Service UDP/RPC/100003
+                Service UDP/RPC/100003/2
+                Service TCP/RPC/mountd
+                Service TCP/RPC/mountd/2
+        }
+</pre>
+
+<hr />
+
+<p><a name="foot_1">[1]</a> - UDP/DNS sends a &lsquo;status-query&rsquo;, UDP/DNSQ sends an &lsquo;IN ANY&rsquo; query. some DNS servers (notably djbdns) do not handle &lsquo;status&rsquo; queries.</p>
+
+<p><a name="foot_2">[2]</a> - UDP/NFS tests NFS version 2. UDP/NFSv3 is NFS version 3.</p>
+
+<p><a name="foot_3">[3]</a> - This test uses the <tt>server-status</tt> query, which is not supported by all radius servers.</p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/docs/users/" title="Users"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/docs/hwab/" title="Aberrant Behavior Detection" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1546965031"></script>
+    <script src="/js/perfect-scrollbar.min.js?1546965031"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1546965031"></script>
+    <script src="/js/jquery.sticky-kit.min.js?1546965031"></script>
+    <script src="/js/featherlight.min.js?1546965031"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1546965031"></script>
+    <script src="/js/highlight.pack.js?1546965031"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1546965031"></script>
+    <script src="/js/learn.js?1546965031"></script>
+    <script src="/js/hugo-learn.js?1546965031"></script>
+
+    <link href="/mermaid/mermaid.css?1546965031" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1546965031"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.30.2" />
+    <meta name="description" content="Argus - system &#43; network monitoring software">
+
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>Remote Agent :: Argus Monitoring</title>
+    
+    
+    <link href="/css/nucleus.css?1546965031" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1546965031" rel="stylesheet">
+    <link href="/css/hybrid.css?1546965031" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1546965031" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1546965031" rel="stylesheet">
+    <link href="/css/auto-complete.css?1546965031" rel="stylesheet">
+    <link href="/css/theme.css?1546965031" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1546965031" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1546965031"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/docs/agent/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <span style="color:#fff;font-size:75px;">Argus</span>
+
+    </div>
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/docs/" title="Docs" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/docs/">
+          Docs
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/install/" title="Install" class="dd-item ">
+        <a href="/docs/install/">
+        Install
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/config/" title="Configuring" class="dd-item ">
+        <a href="/docs/config/">
+        Configuring
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/argusconf/" title="Argus Conf" class="dd-item ">
+        <a href="/docs/argusconf/">
+        Argus Conf
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/configfile/" title="Config File" class="dd-item ">
+        <a href="/docs/configfile/">
+        Config File
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/running/" title="Running Argus" class="dd-item ">
+        <a href="/docs/running/">
+        Running Argus
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/users/" title="Users" class="dd-item ">
+        <a href="/docs/users/">
+        Users
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/services/" title="Services" class="dd-item ">
+        <a href="/docs/services/">
+        Services
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/hwab/" title="Aberrant Behavior Detection" class="dd-item ">
+        <a href="/docs/hwab/">
+        Aberrant Behavior Detection
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/acl/" title="Access Control" class="dd-item ">
+        <a href="/docs/acl/">
+        Access Control
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/advanced/" title="Advanced Features" class="dd-item ">
+        <a href="/docs/advanced/">
+        Advanced Features
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/testport/" title="Argus Test Port" class="dd-item ">
+        <a href="/docs/testport/">
+        Argus Test Port
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/database/" title="Database Testing" class="dd-item ">
+        <a href="/docs/database/">
+        Database Testing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/darp/" title="Distributed Monitoring" class="dd-item ">
+        <a href="/docs/darp/">
+        Distributed Monitoring
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/xtservices/" title="Extended Testing" class="dd-item ">
+        <a href="/docs/xtservices/">
+        Extended Testing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/notif/" title="Notifications" class="dd-item ">
+        <a href="/docs/notif/">
+        Notifications
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/override/" title="Overrides" class="dd-item ">
+        <a href="/docs/override/">
+        Overrides
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/agent/" title="Remote Agent" class="dd-item active">
+        <a href="/docs/agent/">
+        Remote Agent
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/self/" title="Testing Argus" class="dd-item ">
+        <a href="/docs/self/">
+        Testing Argus
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/dns/" title="Testing DNS" class="dd-item ">
+        <a href="/docs/dns/">
+        Testing DNS
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/tktsys/" title="Ticket System" class="dd-item ">
+        <a href="/docs/tktsys/">
+        Ticket System
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/troubleshooting/" title="Troubleshooting" class="dd-item ">
+        <a href="/docs/troubleshooting/">
+        Troubleshooting
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/webpretty/" title="Web Pages" class="dd-item ">
+        <a href="/docs/webpretty/">
+        Web Pages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li class="" role=""> 
+                  <a class="padding" href="https://github.com/jaw0/argus5"><i class='fa fa-github'></i> Github repo</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <p>In God we trust, everything else we monitor.</p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable sticky-parent">
+              
+              <div class="sticky-spacer">
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" href="https://github.com/jaw0/argus5docs/docs/agent.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      Edit this page
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/docs/'>Docs</a> > Remote Agent
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li><a href="#configuring-argus">Configuring Argus</a></li>
+<li><a href="#running-the-agent">Running the Agent</a></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Remote Agent</h1>
+          
+
+        
+
+
+
+
+<p>Argus can monitor various systems and parameters on other servers via an agent</p>
+
+<h1 id="configuring-argus">Configuring Argus</h1>
+
+<p>The agent can gather all sorts of information on all sorts of subsystems on all sorts of Operating Systems. Except for yours. It works for most people, but for you, you might need to play around a bit. Just sayin&rsquo;.</p>
+
+<p>Somewhere at the top of your config, tell argus what port you configured the agent to use (164 in the example above):</p>
+
+<pre>        agent_port:     164
+</pre>
+
+<p>In your argus config, you also need to specify the darp parameters
+(the agent uses the same pki for security):</p>
+
+<pre>
+<font color="#ffcccc"># what is the name of the local instance?</font>
+darp_name       argus1
+
+<font color="#ffcccc"># the root cerificate</font>
+darp_root       /etc/ssl/cert/argus-root.crt
+
+<font color="#ffcccc"># the keypair for this server</font>
+darp_cert       /etc/ssl/cert/argus1.crt
+darp_key        /etc/ssl/cert/argus1.key
+</pre>
+
+<p>Configure things to monitor. You can use all of the usual minvalue, maxvalue, graphing, etc. parameters just as any other <a href="/docs/services/">service</a>.</p>
+
+<pre>
+Host "server.example.com" {
+    Service Agent/load {
+        maxvalue:    0.5
+    }
+
+    Service Agent/disk {
+        arg:        /home
+        maxvalue:   80
+    }
+
+    Service Agent/netin {
+        arg:        eth0
+        maxvalue:   10000000
+    }
+}
+</pre>
+
+<p>The particular things that can be remotely monitored can easily be extended.
+See the 004_agent file in the examples directory.</p>
+
+<h1 id="running-the-agent">Running the Agent</h1>
+
+<ul>
+<li><p>copy the appropriate argusd binary to the remote system</p></li>
+
+<li><p>start argusd in remote agent mode. you need to specify the location
+of the argus root cert, and port number</p></li>
+</ul>
+
+<pre>
+argusd -a 164 -A /etc/certs/argus_root.crt
+</pre>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/docs/override/" title="Overrides"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/docs/self/" title="Testing Argus" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1546965031"></script>
+    <script src="/js/perfect-scrollbar.min.js?1546965031"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1546965031"></script>
+    <script src="/js/jquery.sticky-kit.min.js?1546965031"></script>
+    <script src="/js/featherlight.min.js?1546965031"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1546965031"></script>
+    <script src="/js/highlight.pack.js?1546965031"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1546965031"></script>
+    <script src="/js/learn.js?1546965031"></script>
+    <script src="/js/hugo-learn.js?1546965031"></script>
+
+    <link href="/mermaid/mermaid.css?1546965031" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1546965031"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+
